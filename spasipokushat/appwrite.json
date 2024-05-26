@@ -1,0 +1,69 @@
+{
+    "projectId": "65836df2ca98452160ca",
+    "projectName": "Spasipokushat",
+    "functions": [
+        {
+            "$id": "65913aafb8fcccbf1530",
+            "name": "create user",
+            "runtime": "dart-3.1",
+            "execute": [
+                "any"
+            ],
+            "events": [
+                "users.*.create"
+            ],
+            "schedule": "",
+            "timeout": 15,
+            "enabled": true,
+            "logging": true,
+            "entrypoint": "lib/main.dart",
+            "commands": "dart pub get",
+            "ignore": [
+                ".packages",
+                ".dart_tool"
+            ],
+            "path": "functions/create user",
+            "variables": {}
+        },
+        {
+            "$id": "65959439eaebc41ce080",
+            "name": "update seller raiting",
+            "runtime": "dart-3.1",
+            "execute": [
+                "any"
+            ],
+            "events": [
+                "databases.6585cba5ae8df3baa647.collections.6594f71e8cc9ec146ec2.documents.*.create"
+            ],
+            "schedule": "",
+            "timeout": 15,
+            "enabled": true,
+            "logging": true,
+            "entrypoint": "lib/main.dart",
+            "commands": "dart pub get",
+            "ignore": [
+                ".packages",
+                ".dart_tool"
+            ],
+            "path": "functions/update seller raiting"
+        },
+        {
+            "$id": "6595cf07c66abe438db5",
+            "name": "proceed payment",
+            "runtime": "dart-3.1",
+            "execute": [],
+            "events": [],
+            "schedule": "",
+            "timeout": 15,
+            "enabled": true,
+            "logging": true,
+            "entrypoint": "lib/main.dart",
+            "commands": "dart pub get",
+            "ignore": [
+                ".packages",
+                ".dart_tool"
+            ],
+            "path": "functions/proceed payment"
+        }
+    ]
+}
